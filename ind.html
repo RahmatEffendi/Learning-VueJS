@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Belajar Vue JS</title>
+</head>
+
+<body>
+    <div id="app">
+        <h4>Tutorial 1</h4>
+        <p v-text="pesan"></p>
+        <p v-html="pesan1"></p>
+        <p>{{pesan2}}</p>
+        <p v-html="pesan3"></p><br><br>
+    </div>
+
+    <div id="app2">
+        <h4>Tutorial 2</h4>
+        <p>contoh text : {{text}}</p>
+        <p>contoh bilangan bulat : {{bilbulat}}</p>
+        <p>contoh bilangan desimal : {{bildes}}</p>
+        <p>contoh pilihan logik benar : {{benar}}</p>
+        <p>contoh pilihan logik salah : {{salah}}</p>
+        <p>contoh Array : {{array}}</p><br><br>
+    </div>
+
+    <div id="app3">
+        <h4>Tutorial 3</h4>
+        <p v-if="tampil == true">{{pesan}}</p>
+        <p v-show="tampil == true">{{pesan1}}</p>
+    </div><br><br>
+
+    <div id="app4">
+        <h4>Kondisional If dengan Else</h4>
+        <p v-if="tampil">{{pesan_benar}}</p>
+        <p v-else="tampil">{{pesan_salah}}</p>
+    </div>
+
+    <script src="vue.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

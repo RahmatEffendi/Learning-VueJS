@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vue JS | Tutorial 1 - Mustaches, V-text dan V-html</title>
+</head>
+
+<body>
+    <!-- Perkenalan Vue JS -->
+    <!-- Vue JS merupakan salah satu framework yang baru dan berkembang pesat saat ini,
+         Vue JS sendiri dikembangkan oleh developer yang mengembangkan Angular JS pada Google
+         dengan kata lain penggunaan Vue JS hampir sama dengan penggunaan Angular JS, namun ada beberapa
+         perbedaan mencolok yang membedakan keduanya. Misal jika pada Angular JS menggunakan ng- sedangkan
+         pada Vue JS menggunakan v- 
+    -->
+
+    <div id="app">
+        <p>Menampilkan Tulisan dengan menggunakan Mustaches</p>
+        <!-- Mustached 
+             Tidak diketahui kenapa nama yang digunakan adalah Mustached, namun sebenernya
+             mustaced ini adalah 2 kurung kurawal, yang biasa disebut dengan expression pada AngularJS
+        -->
+        <p>{{pesan}}</p>
+
+        <!-- v-text 
+             Dengan membaca namanya saja kita akan mengetahui fungsi dari v-text, fungsi dari v-text ini 
+             untuk menampilkan text
+        -->
+        <p v-text="pesan1"></p>
+
+        <!-- v-html 
+             Hampir sama dengan fungsi v-text, namun perbedaannya adalah pada v-html kita bisa menggunakan 
+             tag-tag html pada saat menampilkan text
+        -->
+        <p v-html="pesan2"></p>
+
+        <!-- Selain menampilkan text/string, Vue JS juga mendukung untuk menampilkan numerik, array dll -->
+        <p>ini bilangan bulat : {{bulat}}</p>
+        <p>ini bilangan pecahan : {{pecahan}}</p>
+        <p>ini array : {{array}}</p>
+    </div>
+    <script src="../vue.min.js"></script>
+    <script src="../learning1/app.js"></script>
+</body>
+
+</html>
