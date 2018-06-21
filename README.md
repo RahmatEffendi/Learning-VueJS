@@ -1,2 +1,2 @@
 # Learning-VueJS
-This Repo is just colleting code from learning Vue JS
+This Repo is just collecting code from learning Vue JS
