@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vue JS | Computed, Methods, Watcher</title>
+</head>
+
+<body>
+    <!-- Penggunaan Computed Property dimana hasil dari penjumlahan akan secara otomatis muncul 
+    <div id="app">
+        Hasil Penjumlahan dari {{bil1}} + {{bil2}} = {{jumlah}}
+    </div><br><br>
+
+    <!- Penggunaan Method dimana akan ada proses/event yang menyebabkan nilai di proses 
+    <div id="app2">
+        <p>Hasil Penjumlahan Menggunakan Method<br> Penjumlahan dari {{bil1}} + {{bil2}} = {{jumlah}} </p>
+        <button v-on:click="proses">proses</button>
+    </div>
+    -->
+
+    <!-- Explore Penggunaan Computed Property dan Methods -->
+    <div id="app">
+        <p>Perhitungan Untuk {{bil1}} dan {{bil2}} :</p>
+        <p>Hasil Penjumlahan : {{penjumlahan}}</p>
+        <p>Hasil Pengurangan : {{pengurangan}}</p>
+        <p>Hasil Perkalian : {{perkalian}}</p>
+        <p>Hasil Pembagian : {{pembagian}}</p>
+    </div><br><br>
+
+    <div id="app2">
+        <button v-on:click="proses">Proses Semua</button><br>
+        <p>Hasil Penjumlahan : {{penjumlahan}}</p>
+        <p>Hasil Pengurangan : {{pengurangan}}</p>
+        <p>Hasil Perkalian : {{perkalian}}</p>
+        <p>Hasil Pembagian : {{pembagian}}</p>
+    </div>
+
+
+    <script src="../vue.min.js"></script>
+    <script src="../learning4/app.js"></script>
+</body>
+
+</html>
