@@ -57,3 +57,23 @@ new Vue({
         }
     }
 });
+
+new Vue({
+    el: '#app4',
+    data: {
+        pesan: '',
+        keterangan: ''
+    },
+    watch: {
+        pesan: 'ketik'
+    },
+    methods: {
+        ketik: function() {
+            if (this.pesan == 'love') {
+                this.keterangan = ' Heloo Honey'
+            } else {
+                this.keterangan = ' Typing'
+            }
+        }
+    }
+});
