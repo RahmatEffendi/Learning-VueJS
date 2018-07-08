@@ -44,3 +44,16 @@ new Vue({
         }
     }
 });
+
+new Vue({
+    el: '#app3',
+    data: {
+        pesan: '',
+        keterangan: ''
+    },
+    watch: {
+        pesan: function() {
+            this.keterangan = 'Typing...'
+        }
+    }
+});
